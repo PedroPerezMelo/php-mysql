@@ -21,10 +21,40 @@
         "ciudad" => "villavicencio"
     ];
 
+    
     echo $semanasDays[1] . "<br>";
     echo $colores[0] . "<br>";
-    echo $nombreUsuario["edad"];
+    echo $nombreUsuario["edad"] . "<br>";
+    
+    // destruracion de datos
+    $datos = [1, 2, 3];
 
+    [$a, $b, $c] = $datos;
+
+    echo $a .$b . $c . "<br>";
+
+    // arrays
+
+    function getCoordenadas(){
+
+        return [12.34, 56.78];
+    }
+
+    [$latitud, $longitud] = getCoordenadas();
+
+    echo $latitud . $longitud . "<br>";
+
+    // array asociativo
+
+    $persona = [
+        "nombre" => "pedro",
+        "edad" => 24,
+        "ciudad" => "villavicencio"
+    ];
+
+    ["nombre" => $elNombre, "edad" => $laEdad, "ciudad" => $laCiudad] = $persona;
+
+    echo "Nombre: $elNombre edad: $laEdad ciudad: $laCiudad";
     ?>
 </body>
 </html>

@@ -1,0 +1,29 @@
+h1{
+    text-align: center;
+    color: black;
+    border-bottom:dotted lightslategray;
+    width: 50%;
+    margin:auto;
+}
+body {
+    background-color: whitesmoke;
+}
+
+table{
+    border:0;
+    align-items: center;
+}
+table tr{
+    text-align: center;
+}
+
+table input{
+    display: flex;
+    justify-content: center;
+}
+
+#formulario{
+    display: grid;
+    place-items: center;
+    margin-top: 1rem;
+}
